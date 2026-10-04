@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- SEO: в title и description — «салон красоты», «Тюмень», «Машарова» и главные услуги. -->
+<title>Салон красоты EDOL в Тюмени на Машарова — маникюр, педикюр, стрижки</title>
+<meta name="description" content="Салон красоты EDOL (Эдол) в Тюмени, ул. Николая Машарова, 2: маникюр и педикюр, покрытие от 1700 ₽, стрижки от 2500 ₽, окрашивание и наращивание. Ежедневно 10:00–21:00, онлайн-запись.">
+
+<!-- ДЕМО: страница закрыта от индексации, чтобы концепт не попал в поиск.
+     На боевом домене удалить эту строку и добавить canonical (см. SEO-NOTES.md). -->
+<meta name="robots" content="noindex, nofollow">
+<!-- <link rel="canonical" href="https://ВАШ-ДОМЕН.ru/"> -->
+
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F5EEE6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1B1410" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph: превью ссылки в Telegram, WhatsApp, ВКонтакте.
+     Сейчас адреса указывают на демо на GitHub Pages. На боевом домене заменить на https://ДОМЕН/. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="EDOL">
+<meta property="og:title" content="EDOL — салон красоты в Тюмени на Машарова">
+<meta property="og:description" content="Маникюр, педикюр, стрижки и окрашивание. Ул. Николая Машарова, 2. Ежедневно 10:00–21:00, онлайн-запись.">
+<meta property="og:url" content="https://artemdiscipline.github.io/edol-salon/">
+<meta property="og:image" content="https://artemdiscipline.github.io/edol-salon/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Логотип EDOL и подпись: салон красоты в Тюмени, ул. Николая Машарова, 2">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Шрифты: Jost (заголовки, тонкий геометрический гротеск), Golos Text (текст),
+     Cormorant Garamond italic (акценты). У всех есть кириллица.
+     Подключение не блокирует отрисовку: media="print" -> "all" после загрузки. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&amp;family=Golos+Text:wght@400..600&amp;family=Jost:wght@200..500&amp;display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&amp;family=Golos+Text:wght@400..600&amp;family=Jost:wght@200..500&amp;display=swap"></noscript>
+
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+
+<!-- Разметка schema.org для Яндекса и Google: тип, адрес, координаты, часы, телефон, рейтинг, услуги.
+     Рейтинг взят из 2ГИС (см. оговорку в SEO-NOTES.md). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "EDOL",
+  "alternateName": "Эдол",
+  "description": "Салон красоты в Тюмени на ул. Николая Машарова: маникюр, педикюр, стрижки, окрашивание, наращивание ногтей и волос.",
+  "slogan": "Новый салон красоты в самом сердце Машарова!",
+  "telephone": "+7 3452 71-00-17",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Николая Машарова, 2, 1 этаж",
+    "addressLocality": "Тюмень",
+    "addressRegion": "Тюменская область",
+    "postalCode": "625048",
+    "addressCountry": "RU"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 57.148566, "longitude": 65.553135 },
+  "hasMap": "https://2gis.ru/tyumen/firm/70000001097663431",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "10:00",
+    "closes": "21:00"
+  }],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "ratingCount": "220",
+    "reviewCount": "154"
+  },
+  "sameAs": ["https://2gis.ru/tyumen/firm/70000001097663431", "https://t.me/edoll7"],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "name": "Онлайн-запись",
+    "target": "https://n1402793.yclients.ru/"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Услуги салона EDOL",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Ногти",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Покрытие гель-лаком" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 1700, "priceCurrency": "RUB" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Аппаратный маникюр" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Японский маникюр" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Мужской маникюр" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Наращивание ногтей гелем" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Женский педикюр" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Мужской педикюр" } }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Волосы",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Женская стрижка" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 2500, "priceCurrency": "RUB" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Мужская стрижка" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 2500, "priceCurrency": "RUB" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Детская стрижка" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Сложное окрашивание" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Наращивание волос" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Химическая завивка" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Плетение кос" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Свадебные и вечерние причёски" } }
+        ]
+      }
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<!-- Спрайт: логотип и иконки. Логотип нарисован линиями, без шрифта и картинок. -->
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="logo" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="94"/>
+    <path d="M57 86H41V114H57M41 100H55M70 86V114H76A14 14 0 0 0 76 86ZM144 86V114H159"/>
+    <circle cx="117" cy="100" r="14"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4M9 14.5l2 2 4-4"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="6.5" cy="17.5" r="2.5"/><path d="M8.6 8 20 18M8.6 16 20 6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5.2 3.8h3.1l1.6 4-2 1.3a10.5 10.5 0 0 0 5 5l1.3-2 4 1.6v3.1a2 2 0 0 1-2.1 2A15.8 15.8 0 0 1 3.2 5.9a2 2 0 0 1 2-2.1z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20.2l1.2-3.7a8.3 8.3 0 1 1 3.1 3z"/><path d="M9.2 8.4c-.4 2.9 3.2 6.6 6.3 6.3l.9-1.5-1.9-.9-.9.8c-1.2-.5-2.2-1.5-2.7-2.7l.8-.9-.9-1.9z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21 4.2 2.8 11.3l5.7 2 2 6.2 3.2-3.4 4.6 3.4z"/><path d="M8.5 13.3 17.6 7.6l-7.1 7.2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8.2 18h6.3a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7h6.3"/></symbol>
+  <symbol id="i-polish" viewBox="0 0 24 24"><path d="M9 9.5h6l1.2 9.3a2 2 0 0 1-2 2.2H9.8a2 2 0 0 1-2-2.2z"/><path d="M10 9.5V3.5h4v6"/></symbol>
+</svg>
+
+<!-- ===================== ШАПКА ===================== -->
+<header class="header" data-header>
+  <div class="wrap header__inner">
+    <a class="header__logo" href="#top" aria-label="EDOL, салон красоты: в начало страницы">
+      <svg class="logo" aria-hidden="true"><use href="#logo"/></svg>
+    </a>
+
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#uslugi">Услуги</a>
+      <a href="#mastera">Мастера</a>
+      <a href="#raboty">Работы</a>
+      <a href="#otzyvy">Отзывы</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="header__phone" href="tel:+73452710017">+7 (3452) 71-00-17</a>
+      <a class="btn btn--brass btn--sm" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener">Записаться</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню" data-menu-btn>
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Мобильное меню -->
+<div class="menu" id="menu" data-menu inert>
+  <nav class="menu__nav" aria-label="Меню">
+    <a href="#uslugi">Услуги и цены</a>
+    <a href="#mastera">Мастера</a>
+    <a href="#raboty">Работы</a>
+    <a href="#otzyvy">Отзывы</a>
+    <a href="#kontakty">Контакты</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--brass" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener">Записаться онлайн</a>
+    <a class="menu__phone" href="tel:+73452710017">+7 (3452) 71-00-17</a>
+    <p class="menu__addr">ул. Николая Машарова, 2 · <span class="nowrap">ежедневно 10:00–21:00</span></p>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true">
+      <span class="hero__layer" data-depth="0.18"><span class="shape shape--glow"></span></span>
+      <span class="hero__layer" data-depth="0.08"><span class="shape shape--glow2"></span></span>
+      <span class="hero__layer" data-depth="0.3"><span class="shape shape--dot"></span></span>
+    </div>
+
+    <div class="wrap hero__inner">
+      <div class="hero__visual">
+        <span class="hero__orbit" data-depth="-0.04" aria-hidden="true"></span>
+        <!-- Логотип в масштабе: круг рисуется линией, буквы съезжаются к центру -->
+        <div class="emblem">
+          <span class="emblem__disc" aria-hidden="true"></span>
+          <svg class="emblem__circle" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+            <circle cx="300" cy="300" r="258" pathLength="1"/>
+          </svg>
+          <svg class="emblem__ring" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+            <defs><path id="ring-path" d="M300 300m-281 0a281 281 0 1 1 562 0a281 281 0 1 1-562 0"/></defs>
+            <text><textPath href="#ring-path" textLength="1755" lengthAdjust="spacing">НОГТИ · ВОЛОСЫ · УЛ. НИКОЛАЯ МАШАРОВА, 2 · ЕЖЕДНЕВНО 10:00–21:00 · НОГТИ · ВОЛОСЫ · ТЮМЕНЬ · ПО ЗАПИСИ ·</textPath></text>
+          </svg>
+          <h1 class="emblem__title" id="hero-title">
+            <span class="emblem__word"><span class="l" style="--i:0;--o:-.6">E</span><span class="l" style="--i:1;--o:-.2">D</span><span class="l" style="--i:2;--o:.2">O</span><span class="l" style="--i:3;--o:.6">L</span></span>
+            <span class="emblem__kicker">салон красоты<span class="emblem__city"> в Тюмени</span></span>
+          </h1>
+        </div>
+        <span class="chip chip--a" aria-hidden="true"><span class="chip__k">Ногти</span>покрытие от 1 700 ₽</span>
+        <span class="chip chip--b" aria-hidden="true"><span class="chip__k">Волосы</span>стрижка от 2 500 ₽</span>
+      </div>
+
+      <div class="hero__text">
+        <p class="eyebrow hero__eyebrow">Тюмень · Николая Машарова, 2</p>
+        <p class="hero__slogan">Новый салон красоты <em>в самом сердце</em> Машарова</p>
+        <p class="hero__lead">Маникюр, педикюр, стрижки и окрашивание. Ежедневно с 10:00 до 21:00 по предварительной записи.</p>
+        <div class="hero__actions">
+          <a class="btn btn--brass btn--glow" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener">Записаться онлайн</a>
+          <a class="btn btn--line" href="tel:+73452710017"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</a>
+        </div>
+        <a class="badge" href="https://2gis.ru/tyumen/firm/70000001097663431/tab/reviews" target="_blank" rel="noopener">
+          <svg class="badge__star" aria-hidden="true"><use href="#i-star"/></svg>
+          <span><b>4.9</b> в 2ГИС · 220 оценок</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== УСЛУГИ ===================== -->
+  <section class="section services" id="uslugi" aria-labelledby="services-title">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Услуги и цены</p>
+        <h2 class="h2" id="services-title">Ногти и волосы <em>в одном салоне</em></h2>
+        <p class="lead">Выберите услугу и удобное время в онлайн-записи. Цены указаны «от».</p>
+      </header>
+
+      <div class="svc-groups">
+        <!-- Ногти. data-key связывает карточку с ценой в content.js -->
+        <article class="svc-group reveal" aria-labelledby="g-nails">
+          <div class="svc-group__art svc-group__art--nails" aria-hidden="true">
+            <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <g transform="translate(200 236)">
+                <g transform="rotate(-36)"><path class="sw" style="--c:#F0DFCC" d="M0-200c13 0 17 19 17 38 0 14-8 24-17 24s-17-10-17-24c0-19 4-38 17-38z"/></g>
+                <g transform="rotate(-24)"><path class="sw" style="--c:#E4C7AB" d="M0-200c13 0 17 19 17 38 0 14-8 24-17 24s-17-10-17-24c0-19 4-38 17-38z"/></g>
+                <g transform="rotate(-12)"><path class="sw" style="--c:#D4AA8B" d="M0-200c13 0 17 19 17 38 0 14-8 24-17 24s-17-10-17-24c0-19 4-38 17-38z"/></g>
+                <g><path class="sw" style="--c:#BC8E6D" d="M0-200c13 0 17 19 17 38 0 14-8 24-17 24s-17-10-17-24c0-19 4-38 17-38z"/></g>
+                <g transform="rotate(12)"><path class="sw" style="--c:#9C7056" d="M0-200c13 0 17 19 17 38 0 14-8 24-17 24s-17-10-17-24c0-19 4-38 17-38z"/></g>
+                <g transform="rotate(24)"><path class="sw" style="--c:#7B5341" d="M0-200c13 0 17 19 17 38 0 14-8 24-17 24s-17-10-17-24c0-19 4-38 17-38z"/></g>
+                <g transform="rotate(36)"><path class="sw" style="--c:#57392C" d="M0-200c13 0 17 19 17 38 0 14-8 24-17 24s-17-10-17-24c0-19 4-38 17-38z"/></g>
+              </g>
+            </svg>
+          </div>
+          <header class="svc-group__head">
+            <h3 class="svc-group__title" id="g-nails">Ногти</h3>
+            <p class="svc-group__from">покрытие <b>от 1 700 ₽</b></p>
+          </header>
+          <ul class="svc-list" role="list">
+            <li><a class="svc" data-key="manicure-gel" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Покрытие гель-лаком</span><span class="svc__price" data-price>от 1 700 ₽</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="manicure-hardware" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Аппаратный маникюр</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="manicure-japanese" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Японский маникюр</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="manicure-men" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Мужской маникюр</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="nails-extension" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Наращивание ногтей гелем</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="pedicure-women" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Женский педикюр</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="pedicure-men" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Мужской педикюр</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          </ul>
+        </article>
+
+        <!-- Волосы -->
+        <article class="svc-group reveal" style="--d:120ms" aria-labelledby="g-hair">
+          <div class="svc-group__art svc-group__art--hair" aria-hidden="true">
+            <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <g class="strands">
+                <path style="--c:#F0DFCC" d="M-20 30C70 0 130 80 220 52s130-58 200-20"/>
+                <path style="--c:#E4C7AB" d="M-20 46C70 16 130 96 220 68s130-58 200-20"/>
+                <path style="--c:#D4AA8B" d="M-20 62C70 32 130 112 220 84s130-58 200-20"/>
+                <path style="--c:#BC8E6D" d="M-20 78C70 48 130 128 220 100s130-58 200-20"/>
+                <path style="--c:#9C7056" d="M-20 94C70 64 130 144 220 116s130-58 200-20"/>
+                <path style="--c:#7B5341" d="M-20 110C70 80 130 160 220 132s130-58 200-20"/>
+                <path style="--c:#57392C" d="M-20 126C70 96 130 176 220 148s130-58 200-20"/>
+              </g>
+            </svg>
+          </div>
+          <header class="svc-group__head">
+            <h3 class="svc-group__title" id="g-hair">Волосы</h3>
+            <p class="svc-group__from">стрижка <b>от 2 500 ₽</b></p>
+          </header>
+          <ul class="svc-list" role="list">
+            <li><a class="svc" data-key="haircut-women" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Женская стрижка</span><span class="svc__price" data-price>от 2 500 ₽</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="haircut-men" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Мужская стрижка</span><span class="svc__price" data-price>от 2 500 ₽</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="haircut-kids" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Детская стрижка</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="hair-coloring" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Сложное окрашивание</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="hair-extension" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Наращивание волос</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="hair-perm" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Химическая завивка</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="hair-braids" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Плетение кос</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            <li><a class="svc" data-key="hair-styling" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener"><span class="svc__name">Свадебные и вечерние причёски</span><span class="svc__price is-empty" data-price>заполнить</span><svg class="svc__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ПОЧЕМУ EDOL ===================== -->
+  <section class="section why" aria-labelledby="why-title">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Почему EDOL</p>
+        <h2 class="h2" id="why-title">Удобно прийти, <em>легко записаться</em></h2>
+      </header>
+      <ul class="why__list" role="list">
+        <li class="why__item reveal">
+          <span class="why__icon"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span>
+          <h3 class="why__title">В центре Тюмени</h3>
+          <p>Ул. Николая Машарова, 2, первый этаж. Вход со стороны парковки.</p>
+        </li>
+        <li class="why__item reveal" style="--d:90ms">
+          <span class="why__icon"><svg class="ico" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+          <h3 class="why__title">Запись онлайн</h3>
+          <p>Услугу и время можно выбрать в онлайн-записи, без звонка.</p>
+        </li>
+        <li class="why__item reveal" style="--d:180ms">
+          <span class="why__icon"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg></span>
+          <h3 class="why__title">Каждый день</h3>
+          <p>С 10:00 до 21:00 без выходных, по предварительной записи.</p>
+        </li>
+        <li class="why__item reveal" style="--d:270ms">
+          <span class="why__icon"><svg class="ico" aria-hidden="true"><use href="#i-scissors"/></svg></span>
+          <h3 class="why__title">Мастер под услугу</h3>
+          <p>Ногтевой сервис и парикмахерский зал: у каждой услуги свой мастер.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== УСЛУГИ В ТЮМЕНИ (SEO-блоки) =====================
+       Каждый h2 повторяет поисковый запрос, текст под ним — только факты о салоне. -->
+  <section class="section guide" aria-label="Услуги салона в Тюмени">
+    <div class="wrap">
+      <p class="eyebrow reveal">Услуги в Тюмени</p>
+      <div class="guide__grid">
+        <article class="guide__item reveal">
+          <h2 class="h2-sm">Маникюр в Тюмени</h2>
+          <p>В EDOL делают аппаратный, японский и мужской маникюр. Покрытие гель-лаком стоит от 1 700 ₽. Салон находится на ул. Николая Машарова, 2, работает ежедневно с 10:00 до 21:00.</p>
+          <ul class="tags" role="list"><li>Аппаратный</li><li>Японский</li><li>Мужской</li><li>Гель-лак</li></ul>
+          <a class="more" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener">Записаться на маникюр<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="guide__item reveal" style="--d:90ms">
+          <h2 class="h2-sm">Педикюр в Тюмени</h2>
+          <p>Женский и мужской педикюр в салоне на Машарова. Удобное время можно выбрать в онлайн-записи или договориться по телефону +7 (3452) 71-00-17.</p>
+          <ul class="tags" role="list"><li>Женский</li><li>Мужской</li></ul>
+          <a class="more" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener">Записаться на педикюр<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="guide__item reveal">
+          <h2 class="h2-sm">Стрижка в Тюмени</h2>
+          <p>Женские и мужские стрижки от 2 500 ₽, детские стрижки. Салон на первом этаже, вход со стороны парковки.</p>
+          <ul class="tags" role="list"><li>Женская</li><li>Мужская</li><li>Детская</li></ul>
+          <a class="more" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener">Записаться на стрижку<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="guide__item reveal" style="--d:90ms">
+          <h2 class="h2-sm">Окрашивание волос в Тюмени</h2>
+          <p>Сложное окрашивание, химическая завивка, плетение кос, свадебные и вечерние причёски. Запись онлайн, ежедневно с 10:00 до 21:00.</p>
+          <ul class="tags" role="list"><li>Сложное окрашивание</li><li>Химзавивка</li><li>Причёски</li></ul>
+          <a class="more" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener">Записаться на окрашивание<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="guide__item reveal" style="--d:180ms">
+          <h2 class="h2-sm">Наращивание ногтей и волос в Тюмени</h2>
+          <p>Наращивание ногтей гелем и наращивание волос в одном салоне на ул. Николая Машарова, 2.</p>
+          <ul class="tags" role="list"><li>Ногти гелем</li><li>Волосы</li></ul>
+          <a class="more" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener">Записаться на наращивание<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== МАСТЕРА (заглушки из content.js) ===================== -->
+  <section class="section masters" id="mastera" aria-labelledby="masters-title">
+    <div class="wrap">
+      <header class="section-head section-head--split reveal">
+        <div>
+          <p class="eyebrow">Команда</p>
+          <h2 class="h2" id="masters-title">Мастера</h2>
+        </div>
+        <p class="lead">Ногтевой сервис и парикмахерский зал.</p>
+      </header>
+      <ul class="masters__grid" role="list" data-masters></ul>
+    </div>
+  </section>
+
+  <!-- ===================== РАБОТЫ (заглушки из content.js) ===================== -->
+  <section class="section works" id="raboty" aria-labelledby="works-title">
+    <div class="wrap">
+      <header class="section-head section-head--split reveal">
+        <div>
+          <p class="eyebrow">Портфолио</p>
+          <h2 class="h2" id="works-title">Работы <em>мастеров</em></h2>
+        </div>
+        <a class="more" href="https://2gis.ru/tyumen/firm/70000001097663431/tab/photos" target="_blank" rel="noopener">Фото салона в 2ГИС<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </header>
+      <ul class="works__grid" role="list" data-gallery></ul>
+    </div>
+  </section>
+
+  <!-- ===================== РЕЙТИНГ ===================== -->
+  <section class="section rating" id="otzyvy" aria-labelledby="rating-title">
+    <div class="wrap rating__inner">
+      <div class="rating__score reveal">
+        <p class="rating__num" aria-hidden="true"><span data-count="4.9">4.9</span></p>
+        <div class="stars" role="img" aria-label="Рейтинг 4.9 из 5">
+          <span class="stars__base"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+          <span class="stars__fill" data-stars style="--w:98%"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+        </div>
+        <p class="rating__meta">220 оценок · 154 отзыва</p>
+      </div>
+      <div class="rating__text reveal" style="--d:120ms">
+        <p class="eyebrow">Отзывы</p>
+        <h2 class="h2" id="rating-title">4.9 из 5 <em>в 2ГИС</em></h2>
+        <p>Оценки и отзывы гостей собирает 2ГИС. Все отзывы целиком можно прочитать в карточке салона, там же можно оставить свой.</p>
+        <a class="btn btn--line" href="https://2gis.ru/tyumen/firm/70000001097663431/tab/reviews" target="_blank" rel="noopener">Читать отзывы в 2ГИС<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <p class="note">Данные карточки 2ГИС на октябрь 2026 года.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== КОНТАКТЫ ===================== -->
+  <section class="section contacts" id="kontakty" aria-labelledby="contacts-title">
+    <div class="wrap contacts__inner">
+      <div class="contacts__info reveal">
+        <p class="eyebrow">Контакты</p>
+        <h2 class="h2" id="contacts-title">Ждём вас <em>на Машарова</em></h2>
+
+        <address class="contacts__list">
+          <div class="c-row">
+            <svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>
+            <div>
+              <p class="c-label">Адрес</p>
+              <p class="c-value">Тюмень, ул. Николая Машарова, 2</p>
+              <p class="c-note">1 этаж, вход со стороны парковки</p>
+            </div>
+          </div>
+          <div class="c-row">
+            <svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>
+            <div>
+              <p class="c-label">Режим работы</p>
+              <p class="c-value">Ежедневно, <time datetime="10:00">10:00</time>–<time datetime="21:00">21:00</time></p>
+              <p class="c-note">по предварительной записи</p>
+            </div>
+          </div>
+          <div class="c-row">
+            <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+            <div>
+              <p class="c-label">Телефон</p>
+              <p class="c-value"><a href="tel:+73452710017">+7 (3452) 71-00-17</a></p>
+            </div>
+          </div>
+          <div class="c-row">
+            <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>
+            <div>
+              <p class="c-label">Мессенджеры</p>
+              <p class="c-value c-links">
+                <a href="https://wa.me/79044763377" target="_blank" rel="noopener">WhatsApp: +7 904 476-33-77</a>
+                <a href="https://t.me/edoll7" target="_blank" rel="noopener">Telegram: @edoll7</a>
+              </p>
+            </div>
+          </div>
+        </address>
+
+        <div class="contacts__actions">
+          <a class="btn btn--brass" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener">Записаться онлайн</a>
+          <a class="btn btn--line" href="https://2gis.ru/tyumen/directions/points/%7C65.553135%2C57.148566%3B70000001097663431" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-route"/></svg>Построить маршрут</a>
+        </div>
+      </div>
+
+      <figure class="map reveal" style="--d:120ms">
+        <svg class="map__svg" viewBox="0 0 640 440" role="img" aria-labelledby="map-title map-desc" focusable="false">
+          <title id="map-title">Схема: салон EDOL на улице Николая Машарова, 2</title>
+          <desc id="map-desc">Условная схема. Салон на первом этаже, вход со стороны парковки.</desc>
+          <rect class="m-bg" width="640" height="440"/>
+          <g class="m-blocks">
+            <rect x="20" y="20" width="110" height="90" rx="10"/><rect x="150" y="20" width="110" height="90" rx="10"/><rect x="280" y="20" width="110" height="90" rx="10"/><rect x="540" y="20" width="110" height="90" rx="10"/>
+            <rect x="20" y="130" width="110" height="90" rx="10"/><rect x="150" y="130" width="110" height="90" rx="10"/><rect x="280" y="130" width="110" height="90" rx="10"/><rect x="540" y="130" width="110" height="90" rx="10"/>
+            <rect x="20" y="240" width="110" height="90" rx="10"/><rect x="150" y="240" width="110" height="90" rx="10"/><rect x="280" y="240" width="110" height="90" rx="10"/><rect x="410" y="240" width="110" height="90" rx="10"/><rect x="540" y="240" width="110" height="90" rx="10"/>
+            <rect x="20" y="350" width="110" height="90" rx="10"/><rect x="150" y="350" width="110" height="90" rx="10"/><rect x="280" y="350" width="110" height="90" rx="10"/><rect x="410" y="350" width="110" height="90" rx="10"/><rect x="540" y="350" width="110" height="90" rx="10"/>
+          </g>
+          <!-- парковка и здание салона -->
+          <rect class="m-park" x="414" y="24" width="102" height="82" rx="8"/>
+          <text class="m-p" x="465" y="74" text-anchor="middle">P</text>
+          <rect class="m-home" x="410" y="130" width="110" height="90" rx="10"/>
+          <path class="m-enter" d="M465 108v18"/>
+          <!-- улица Николая Машарова -->
+          <path class="m-road-edge" d="M-20 420 660 196"/>
+          <path class="m-road" d="M-20 420 660 196"/>
+          <path id="street-label" d="M40 405 640 207" fill="none"/>
+          <text class="m-street"><textPath href="#street-label" startOffset="6%">ул. Николая Машарова</textPath></text>
+          <!-- метка -->
+          <g class="m-pin" transform="translate(465 172)">
+            <circle class="m-pulse" r="12"/>
+            <circle class="m-dot" r="12"/>
+            <circle class="m-dot-in" r="4.5"/>
+          </g>
+          <g class="m-card" transform="translate(196 132)">
+            <rect width="168" height="64" rx="12"/>
+            <text class="m-card-t" x="20" y="30">EDOL</text>
+            <text class="m-card-s" x="20" y="50">Машарова, 2 · 1 этаж</text>
+          </g>
+          <path class="m-link" d="M364 164h86"/>
+        </svg>
+        <figcaption>Схема условная. Точный маршрут откроется в 2ГИС или <a href="https://yandex.ru/maps/?rtext=~57.148566%2C65.553135&amp;rtt=auto" target="_blank" rel="noopener">Яндекс Картах</a>.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== ФУТЕР ===================== -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <svg class="logo footer__logo" aria-hidden="true"><use href="#logo"/></svg>
+      <div>
+        <p class="footer__name">EDOL · салон красоты в Тюмени</p>
+        <p>ул. Николая Машарова, 2, 1 этаж<br><span class="nowrap">ежедневно 10:00–21:00</span></p>
+      </div>
+    </div>
+    <nav class="footer__nav" aria-label="Разделы сайта">
+      <a href="#uslugi">Услуги</a>
+      <a href="#mastera">Мастера</a>
+      <a href="#raboty">Работы</a>
+      <a href="#otzyvy">Отзывы</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <div class="footer__contact">
+      <a class="footer__phone" href="tel:+73452710017">+7 (3452) 71-00-17</a>
+      <div class="footer__social">
+        <a class="round" href="https://wa.me/79044763377" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg></a>
+        <a class="round" href="https://t.me/edoll7" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg class="ico" aria-hidden="true"><use href="#i-tg"/></svg></a>
+        <a class="round" href="https://2gis.ru/tyumen/firm/70000001097663431" target="_blank" rel="noopener" aria-label="EDOL в 2ГИС"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <p>© <span data-year>2026</span> EDOL</p>
+    <p class="footer__demo">Концепт сайта. Демо-версия</p>
+  </div>
+</footer>
+
+<!-- Нижняя панель записи на телефоне: появляется после первого экрана -->
+<div class="mbar" data-mbar inert>
+  <a class="btn btn--brass btn--glow mbar__book" href="https://n1402793.yclients.ru/" target="_blank" rel="noopener">Записаться онлайн</a>
+  <a class="round round--solid" href="tel:+73452710017" aria-label="Позвонить"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></a>
+  <a class="round round--solid" href="https://wa.me/79044763377" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg></a>
+</div>
+
+<script src="content.js"></script>
+<script src="main.js" defer></script>
+</body>
+</html>
